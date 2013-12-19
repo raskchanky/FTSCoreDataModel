@@ -2,9 +2,10 @@ FTSCoreDataModel
 --------
 
 FTSCoreDataModel solves two problems:
+
 1. It consolidates and hides all the boilerplate associated with setting up
    a Core Data stack.
-2. It gives you a method, `contextForCurrentThread` that will return an
+1. It gives you a method, `contextForCurrentThread` that will return an
    NSManagedObjectContext for whatever thread the method is called on.
 
 ## Usage
