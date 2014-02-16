@@ -79,7 +79,7 @@ static NSString const * kFTSManagedObjectContextKey = @"FTS_NSManagedObjectConte
     NSManagedObjectContext *context = [self contextWithoutParent];
     context.persistentStoreCoordinator = parentContext.persistentStoreCoordinator;
     
-    [[NSNotificationCenter defaultCenter] addObserver:context
+    [[NSNotificationCenter defaultCenter] addObserver:self
                                              selector:@selector(contextWillSave:)
                                                  name:NSManagedObjectContextDidSaveNotification
                                                object:context];
